@@ -39,7 +39,10 @@ jobs:
 workflows:
   test_build_deploy:
     jobs:
-      - build_test
+      - build_test:
+          filters:
+            branches:
+              only: main
       # - build_push_docker_image:
       #     requires:
       #       - build_test
