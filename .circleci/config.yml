@@ -42,7 +42,7 @@ workflows:
       - build_test:
           filters:
             branches:
-              only: main
+              only: develop
       # - build_push_docker_image:
       #     requires:
       #       - build_test
